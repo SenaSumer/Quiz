@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Caveat", sans-serif;
+}
+
+body {
+    background-color: green;
+}
+
+.start_button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.app.activeInfo {
+   display: block;
+   z-index: 5;
+}
+.start_button.activeInfo{
+    display:none
+}
+
+.start_button button {
+    font-size: 25px;
+    font-weight: 500;
+    color: green;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.start_button button:hover {
+    background-color: gray;
+    color: black;
+    transform: scale(1.1);
+}
+
+.app {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+   display: none;
+}
+
+.app h1 {
+    font-size: 25px; /* Değişti */
+    color: black;
+    font-weight: 600; /* Tekrar eklendi */
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+
+}
+
+.btn {
+    background-color: #ffff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background-color: green;
+    transform: scale(1.1);
+    color: white;
+}
+.btn.disabled{
+    cursor: no-drop;
+}
+
+#next-btn {
+    background:green;
+    color: white;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+border-radius: 12px;
+cursor: pointer;
+display: none;
+}
+.correct{
+    background:#9aeabc;
+}
+.incorrect{
+    background: #ff9393
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');

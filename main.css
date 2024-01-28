@@ -18,11 +18,12 @@ body {
 }
 
 .app.activeInfo {
-   display: block;
-   z-index: 5;
+    display: block;
+    z-index: 5;
 }
-.start_button.activeInfo{
-    display:none
+
+.start_button.activeInfo {
+    display: none
 }
 
 .start_button button {
@@ -50,13 +51,15 @@ body {
     margin: 100px auto 0;
     border-radius: 10px;
     padding: 30px;
-   display: none;
+    display: none;
 }
 
 .app h1 {
-    font-size: 25px; /* Değişti */
+    font-size: 25px;
+    /* Değişti */
     color: black;
-    font-weight: 600; /* Tekrar eklendi */
+    font-weight: 600;
+    /* Tekrar eklendi */
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
 }
@@ -91,26 +94,38 @@ body {
     transform: scale(1.1);
     color: white;
 }
-.btn.disabled{
+
+.btn.disabled {
     cursor: no-drop;
 }
 
 #next-btn {
-    background:green;
+    background: green;
     color: white;
     font-weight: 500;
     width: 150px;
     border: 0;
     padding: 10px;
     margin: 20px auto 0;
-border-radius: 12px;
-cursor: pointer;
-display: none;
+    border-radius: 12px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s;
 }
-.correct{
-    background:#9aeabc;
+ 
+#next-btn:hover{
+    transform: scale(1.1);
+background: gainsboro;
+color: black;
+
 }
-.incorrect{
+
+.correct {
+   /* background: #9aeabc;*/
+   background: #339933;
+}
+
+.incorrect {
     /*background: #ff9393*/
     background: #e63f30;
 }

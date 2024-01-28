@@ -111,7 +111,8 @@ display: none;
     background:#9aeabc;
 }
 .incorrect{
-    background: #ff9393
+    /*background: #ff9393*/
+    background: #e63f30;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
